@@ -1,11 +1,14 @@
 class Bob
-def response(remark)
-  if remark.upcase == remark
-    return "Whoa, chill out"
-  elsif remark.empty?
-    return "Fine, be that way"
-  end
-end
+  def hey(remark)
+    if remark.upcase == remark && remark.downcase != remark
+      return "Whoa, chill out"
+    elsif remark.empty?
+      return "Fine, be that way"
+    elsif remark.endwith?("?")
+      return "Sure"
+    end
+  end                                                        # => :response
+end                                                          # => :response
 
 
 
